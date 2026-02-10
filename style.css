@@ -1,0 +1,113 @@
+/* ---------- Page ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Card ---------- */
+.container {
+  background: #ffffff;
+  width: 92%;
+  max-width: 480px;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* ---------- Title ---------- */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ---------- Input ---------- */
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #667eea;
+}
+
+/* ---------- Buttons ---------- */
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s;
+}
+
+button:not(:last-child) {
+  margin-right: 8px;
+}
+
+button.analyze {
+  background: #667eea;
+}
+
+button.analyze:hover {
+  background: #5a6fdc;
+}
+
+button.clear {
+  background: #ff7675;
+}
+
+button.clear:hover {
+  background: #e85c5b;
+}
+
+button.refresh {
+  background: #00b894;
+}
+
+button.refresh:hover {
+  background: #009e7f;
+}
+
+/* ---------- Result ---------- */
+#result {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+#result h3 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+#result p {
+  background: #f6f7ff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#result hr {
+  border: none;
+  height: 1px;
+  background: #ddd;
+  margin: 12px 0;
+}
