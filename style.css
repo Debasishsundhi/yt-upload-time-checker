@@ -111,3 +111,41 @@ button.refresh:hover {
   background: #ddd;
   margin: 12px 0;
 }
+/* ---------- Mobile Optimization ---------- */
+@media (max-width: 600px) {
+
+  body {
+    padding: 15px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .btn-group {
+    flex-direction: column;
+  }
+
+  .btn-group button {
+    margin-right: 0;
+    margin-bottom: 8px;
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  #result p {
+    font-size: 13px;
+  }
+}
