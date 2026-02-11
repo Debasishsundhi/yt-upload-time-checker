@@ -39,10 +39,8 @@ function extractChannelId(input) {
 
 // UTC → IST format (Day + Date + Time + AM/PM + Seconds)
 function formatIST(date) {
-  date.setHours(date.getHours() + 5);
-  date.setMinutes(date.getMinutes() + 30);
-
   return date.toLocaleString("en-IN", {
+    timeZone: "Asia/Kolkata",
     weekday: "long",
     day: "2-digit",
     month: "short",
