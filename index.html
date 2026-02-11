@@ -3,26 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <title>YouTube Published Time Checker</title>
+
+  <!-- THIS LINE IS NON-NEGOTIABLE FOR MOBILE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-  <h1>YouTube Published Time Checker</h1>
 
-  <input
-    type="text"
-    id="channelId"
-    placeholder="Enter Channel / Channel ID / Video URL"
-  >
+  <div class="app">
+    <h1>YouTube Published Time</h1>
 
-  <div class="btn-group">
-    <button class="analyze" onclick="analyze()">Analyze</button>
-    <button class="clear" onclick="clearData()">Clear</button>
-    <button class="refresh" onclick="refreshPage()">Refresh</button>
+    <input
+      type="text"
+      id="channelId"
+      placeholder="Paste Channel / Video URL or ID"
+    >
+
+    <button class="btn analyze" onclick="analyze()">Analyze</button>
+
+    <div class="btn-row">
+      <button class="btn clear" onclick="clearData()">Clear</button>
+      <button class="btn refresh" onclick="refreshPage()">Refresh</button>
+    </div>
+
+    <div id="result"></div>
   </div>
-
-  <div id="result"></div>
-</div>
 
   <script src="script.js"></script>
 </body>
